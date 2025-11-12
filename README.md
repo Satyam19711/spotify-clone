@@ -75,16 +75,17 @@ Follow these steps to set up the project locally 👇
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/Satyam19711/Spotify-FullStack.git
+git clone https://github.com/Satyam19711/spotify-clone.git
 
-# 2. Navigate into the project folder
-cd Spotify-FullStack
-
-# 3. Install dependencies
+# 2. Install dependencies
 npm install
 
-# 4. Run the development server
+# 3. Run the development server
 npm run dev
+
+```
+---
+
 
 ## Contact
 
