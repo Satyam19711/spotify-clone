@@ -1,39 +1,47 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "./Navbar";
-import { albumsData } from "../assets/assets";
 import AlbumItem from "./AlbumItem";
-import { songsData } from "../assets/assets";
 import SongItem from "./SongItem";
+import { PlayerContext } from "../context/PlayerContext";
 
 const DisplayHome = () => {
+  const { songsData, albumsData } = useContext(PlayerContext);
+
   return (
     <>
       <Navbar />
-      <div className="mb-4">
-        <h1 className="my-5 font-bold text-2xl">Featured Charts</h1>
-        <div className="flex overflow-auto">
+
+      <div className="mb-10 px-4 md:px-8">
+        <h1 className="my-5 font-bold text-2xl text-white">Featured Charts</h1>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           {albumsData.map((item, index) => (
             <AlbumItem
               key={index}
               name={item.name}
               desc={item.desc}
-              id={item.id}
+              id={item._id}
               image={item.image}
+              className="border border-gray-700 bg-[#181818] hover:bg-[#282828] rounded-lg h-[300px] overflow-hidden transition-all duration-300 cursor-pointer"
             />
           ))}
         </div>
       </div>
 
-      <div className="mb-4">
-        <h1 className="my-5 font-bold text-2xl">Today's biggest hits</h1>
-        <div className="flex overflow-auto">
+      <div className="mb-10 px-4 md:px-8">
+        <h1 className="my-5 font-bold text-2xl text-white">
+          Today's Biggest Hits
+        </h1>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {songsData.map((item, index) => (
             <SongItem
               key={index}
               name={item.name}
               desc={item.desc}
-              id={item.id}
+              id={item._id}
               image={item.image}
+              className="border border-gray-700 bg-[#181818] hover:bg-[#282828] rounded-lg h-[300px] overflow-hidden transition-all duration-300 cursor-pointer"
             />
           ))}
         </div>

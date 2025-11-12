@@ -14,29 +14,41 @@ const Player = () => {
     next,
     previous,
     seekSong,
+    shufflePlay,
+    isShuffle,
+    repeat,
+    isRepeat,
   } = useContext(PlayerContext);
 
-  return (
+  return track ? (
     <div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
         <img className="w-12" src={track.image} alt="" />
         <div>
           <p>{track.name}</p>
-          <p>{track.desc.slice(0, 12)}</p>
+          <p className="relative group cursor-pointer text-gray-300 text-sm">
+            {track.desc.slice(0, 20)}...
+            <span className="absolute bottom-full left-0 mb-2 hidden group-hover:block bg-[#2c2c2c] text-white text-xs p-2 rounded-md w-64 shadow-lg z-10">
+              {track.desc}
+            </span>
+          </p>
         </div>
       </div>
       <div className="flex flex-col items-center gap-1 m-auto">
         <div className="flex gap-4">
           <img
-            className="w-4 cursor-pointer"
+            onClick={shufflePlay}
+            className={`w-4 cursor-pointer ${
+              isShuffle ? "opacity-100 text-green-500" : "opacity-50"
+            }`}
             src={assets.shuffle_icon}
-            alt=""
+            alt="shuffle"
           />
           <img
             onClick={previous}
             className="w-4 cursor-pointer"
             src={assets.prev_icon}
-            alt=""
+            alt="previous"
           />
 
           {playStatus ? (
@@ -44,14 +56,14 @@ const Player = () => {
               onClick={pause}
               className="w-4 cursor-pointer"
               src={assets.pause_icon}
-              alt=""
+              alt="pause"
             />
           ) : (
             <img
               onClick={play}
               className="w-4 cursor-pointer"
               src={assets.play_icon}
-              alt=""
+              alt="play"
             />
           )}
 
@@ -59,9 +71,16 @@ const Player = () => {
             onClick={next}
             className="w-4 cursor-pointer"
             src={assets.next_icon}
-            alt=""
+            alt="next"
           />
-          <img className="w-4 cursor-pointer" src={assets.loop_icon} alt="" />
+          <img
+            onClick={repeat}
+            className={`w-4 cursor-pointer ${
+              isRepeat ? "opacity-100 text-green-500" : "opacity-50"
+            }`}
+            src={assets.loop_icon}
+            alt="repeat"
+          />
         </div>
         <div className="flex items-center gap-5">
           <p>
@@ -83,7 +102,7 @@ const Player = () => {
         </div>
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default Player;
