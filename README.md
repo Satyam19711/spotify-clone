@@ -6,12 +6,12 @@ It allows users to browse albums, play songs, and stream music — all connected
 ## Demo
 
 
+<p align="center">
+  🔗 <a href="https://satyamspotifyclone.netlify.app" target="_blank"><b>🎵 Spotify App</b></a> |
+  <a href="https://admin-spotify.netlify.app" target="_blank"><b>⚙️ Admin Panel</b></a> |
+  <a href="https://spotify-backend-2-sl5d.onrender.com/api/song/list" target="_blank"><b>🧠 Backend API</b></a>
+</p>
 
-🔗 **🎵 Main Spotify App:** [Click Here](https:/satyamspotifyclone.netlify.app/)
-
-🔗 **⚙️ Admin Panel:** [Click Here](https://admin-spotify.netlify.app/)
-
-🔗 **🧠 Backend API:** [Click Here](https://spotify-backend-2-sl5d.onrender.com/)
 ## Screenshots
 
 
