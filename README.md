@@ -1,95 +1,92 @@
 
-#  🎵 Spotify Clone
-A React-based Spotify Clone that allows users to play music with full player controls. This project includes play, pause, forward, and backward functionality along with an album section for a sleek music experience.
+# 🎧 Spotify Full-Stack App
+
+A **full-stack Spotify music streaming clone** built with **React (Vite)** on the frontend and **Node.js + Express + MongoDB** on the backend.  
+It allows users to browse albums, play songs, and stream music — all connected to an **admin dashboard** for managing songs and albums with **Cloudinary integration** for file storage.  
+## Demo
 
 
 
+🔗 **🎵 Main Spotify App:** [Click Here](https:/satyamspotifyclone.netlify.app/)
 
+🔗 **⚙️ Admin Panel:** [Click Here](https://admin-spotify.netlify.app/)
 
-## Features
-
-- ✅ Play/Pause music
-- ✅ Forward/Backward song navigation
-- ✅ Albums section
-- ✅ Modern UI using Tailwind CSS
-- ✅ Fully responsive design
-
-
-## Tech Stack
-
-React.js (Frontend framework)
-
-Tailwind CSS (For styling)
-
-
-
-
-
-
-
-
+🔗 **🧠 Backend API:** [Click Here](https://spotify-backend-2-sl5d.onrender.com/)
 ## Screenshots
 
-![sp 1](https://github.com/user-attachments/assets/1bf2b0c4-4526-4fdf-b7b9-039966b7e3bc)
-
-![sp 2](https://github.com/user-attachments/assets/1f55fd45-a735-4d9c-9c5c-6741551ae376)
 
 
+![App Screenshot](https://github.com/Satyam19711/spotify-clone/blob/main/src/assets/sp1.JPG)
 
-## Installation
+![App Screenshot](https://github.com/Satyam19711/spotify-clone/blob/main/src/assets/sp2.JPG)
 
-Install my-project with npm
+![App Screenshot](https://github.com/Satyam19711/spotify-clone/blob/main/src/assets/sp3.JPG)
+
+![App Screenshot](https://github.com/Satyam19711/spotify-clone/blob/main/src/assets/sp4.JPG)
+
+
+
+## 🧩 Tech Stack  
+
+### 🖥️ Frontend  
+- React (Vite)  
+- Tailwind CSS  
+- React Router DOM  
+- Axios  
+- Context API  
+
+### ⚙️ Backend  
+- Node.js  
+- Express.js  
+- MongoDB (Mongoose)  
+- Cloudinary (Media Storage)  
+- Multer (File Uploads)  
+- CORS + dotenv  
+
+---
+## 🎨 Features  
+
+### 🎧 User App (Spotify Clone)  
+- Browse and play songs & albums  
+- Play / Pause / Next / Previous controls  
+- Shuffle & Repeat functionality  
+- Progress bar (seek control)  
+- Responsive, clean Spotify-like UI  
+- Dynamic background colors for albums  
+
+### 🔐 Admin Panel  
+- Add new albums with image + background color  
+- Add new songs with audio + image upload  
+- Delete or manage existing songs/albums  
+- Cloudinary storage for media  
+- Automatic form reset after upload  
+- Admin verification before upload  
+
+### 🗄️ Backend  
+- RESTful API for songs & albums  
+- MongoDB for persistent data storage  
+- Proper CORS configuration  
+- File upload + cloud storage handling  
+- Error handling & response management 
+
+## ⚙️ Installation & Setup
+
+Follow these steps to set up the project locally 👇
 
 ```bash
-git clone https://github.com/Satyam19711/spotify-clone.git
-```
-```bash
-cd spotify-clone
-```
-```bash
+# 1. Clone this repository
+git clone https://github.com/Satyam19711/Spotify-FullStack.git
+
+# 2. Navigate into the project folder
+cd Spotify-FullStack
+
+# 3. Install dependencies
 npm install
-```
-```bash
-npm start
-```
 
+# 4. Run the development server
+npm run dev
 
-
-## 🌍 Live Demo
-
-
-🔗 Live Demo: https://satyamspotifyclone.netlify.app/
-
-
-## Deployment
-
-This project can be deployed on platforms like Vercel and Netlify. Follow these steps to deploy it:
-
-
-Deploy on Vercel:
-```bash
-npm install -g vercel
-```
-```bash
-vercel login
-```
-```bash
-vercel
-```
-
-Deploy on Netlify:
-```bash
-npm install -g netlify-cli
-```
-```bash
-netlify login
-```
-```bash
-netlify deploy
-
-```
-
-# Contact
+## Contact
 
 For Contact, email smauryachs44@gmail.com
 
