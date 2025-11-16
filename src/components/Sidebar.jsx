@@ -36,7 +36,10 @@ const Sidebar = () => {
           </p>
           <button
             onClick={() =>
-              window.open("https://admin-spotify.netlify.app/", "_blank")
+              window.open(
+                "https://satyam1919-spotify-admin.vercel.app/songs",
+                "_blank"
+              )
             }
             className="px-4 py-1.5 bg-white text-[15px] text-black rounded-full mt-4 hover:bg-gray-200 transition-all duration-200"
           >
