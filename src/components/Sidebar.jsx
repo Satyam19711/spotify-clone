@@ -37,7 +37,7 @@ const Sidebar = () => {
           <button
             onClick={() =>
               window.open(
-                "https://satyam1919-spotify-admin.vercel.app/songs",
+                "https://satyam1919-spotify-admin.vercel.app",
                 "_blank"
               )
             }
