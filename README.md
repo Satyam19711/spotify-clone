@@ -7,8 +7,8 @@ It allows users to browse albums, play songs, and stream music — all connected
 
 
 <p align="center">
-  🔗 <a href="https://satyamspotifyclone.netlify.app" target="_blank"><b>🎵 Spotify App</b></a> |
-  <a href="https://admin-spotify.netlify.app" target="_blank"><b>⚙️ Admin Panel</b></a> |
+  🔗 <a href="https://satyam1919-spotify-clone.vercel.app/" target="_blank"><b>🎵 Spotify App</b></a> |
+  <a href="https://satyam1919-spotify-admin.vercel.app/" target="_blank"><b>⚙️ Admin Panel</b></a> |
   <a href="https://spotify-backend-2-sl5d.onrender.com/api/song/list" target="_blank"><b>🧠 Backend API</b></a>
 </p>
 
@@ -76,6 +76,9 @@ Follow these steps to set up the project locally 👇
 ```bash
 # 1. Clone this repository
 git clone https://github.com/Satyam19711/spotify-clone.git
+
+# 2. Navigate into the project folder
+cd spotify-clone
 
 # 2. Install dependencies
 npm install
