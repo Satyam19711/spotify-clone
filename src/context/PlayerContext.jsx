@@ -16,6 +16,8 @@ const PlayerContextProvider = (props) => {
   const [playStatus, setPlayStatus] = useState(false);
   const [isShuffle, setIsShuffle] = useState(false);
   const [isRepeat, setIsRepeat] = useState(false);
+  const [loadingSongs, setLoadingSongs] = useState(true);
+  const [loadingAlbums, setLoadingAlbums] = useState(true);
 
   const [time, setTime] = useState({
     currentTime: { second: 0, minute: 0 },
@@ -119,6 +121,7 @@ const PlayerContextProvider = (props) => {
     } catch (error) {
       console.log("Song Fetch Error:", error.message);
     }
+    setLoadingSongs(false);
   };
 
   const getAlbumsData = async () => {
@@ -128,6 +131,7 @@ const PlayerContextProvider = (props) => {
     } catch (error) {
       console.log("Album Fetch Error:", error.message);
     }
+    setLoadingAlbums(false);
   };
 
   useEffect(() => {
@@ -191,6 +195,8 @@ const PlayerContextProvider = (props) => {
     albumsData,
     isShuffle,
     isRepeat,
+    loadingSongs,
+    loadingAlbums,
   };
 
   return (
